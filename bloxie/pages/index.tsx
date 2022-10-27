@@ -1,10 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="h-screen w-screen flex flex-col justify-center items-center">
+        <div className="text-2xl text-center">
+          Which crypto you love the most?
+        </div>
+        <div className="p-2" />
+        <div className="border rounded p-8 flex justify-between max-w-2xl items-center">
+          <div className="w-16 h-16 bg-yellow-400"></div>
+          <div className="p-8">Vs</div>
+          <div className="w-16 h-16 bg-violet-500"></div>
+        </div>
+      </h1>
     </div>
   );
 }
