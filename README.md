@@ -1,1 +1,1 @@
-# Bloxie: A modern-full-stack-app
+# Modern-Full-Stack-Apps
