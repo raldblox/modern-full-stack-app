@@ -27,12 +27,11 @@ export default function Home() {
             <div className="border rounded p-8 flex justify-between max-w-2xl items-center">
               <div className="w-64 h-64 flex flex-col">
                 <Image
-                  src={firstBlox.data?.sprites.front_default}
+                  src={firstBlox.data?.sprites.front_default!}
                   className="w-full"
                   alt="img"
                   width={300}
                   height={300}
-                  layout="responsive" 
                 />
                 <div className="text-xl text-center uppercase mt-[-2rem]">
                   {firstBlox.data?.name}
@@ -41,12 +40,11 @@ export default function Home() {
               <div className="p-8">OR</div>
               <div className="w-64 h-64 flex flex-col">
                 <Image
-                  src={secondBlox.data?.sprites.front_default}
+                  src={secondBlox.data?.sprites.front_default!}
                   className="w-full"
                   alt="img"
                   width={300}
                   height={300}
-                  layout="responsive" 
                 />
                 <div className="text-xl text-center uppercase mt-[-2rem]">
                   {secondBlox.data?.name}
