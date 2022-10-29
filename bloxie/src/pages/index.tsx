@@ -28,7 +28,7 @@ export default function Home() {
               <div className="w-64 h-64 flex flex-col">
                 <Image
                   src={firstBlox.data?.sprites.front_default!}
-                  className="w-full"
+                  className=""
                   alt="img"
                   width={300}
                   height={300}
@@ -41,7 +41,7 @@ export default function Home() {
               <div className="w-64 h-64 flex flex-col">
                 <Image
                   src={secondBlox.data?.sprites.front_default!}
-                  className="w-full"
+                  className=""
                   alt="img"
                   width={300}
                   height={300}

@@ -8,9 +8,10 @@ export const appRouter = trpc.router().query("get-pokemon-by-id", {
     id: z.number(),
   }),
   async resolve({ input }) {
-    const api = new PokemonClient;
+    const api = new PokemonClient();
+
     const pokemon = await api.getPokemonById(input.id);
-    return pokemon;
+    return { name: pokemon.name, sprites: pokemon.sprites };
   },
 });
 
